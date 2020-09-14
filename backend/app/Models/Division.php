@@ -15,6 +15,6 @@ class Division extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'upper_division', 'collaborators', 'ambassor'
+        'name', 'upper_division', 'collaborators', 'ambassador'
     ];
 }

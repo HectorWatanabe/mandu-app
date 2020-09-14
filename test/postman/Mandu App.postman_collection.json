@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "6f22a5a1-ad35-44ba-a717-db7666695265",
+		"name": "Mandu App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista Divisiones",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/divisions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"divisions"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "pagination_count",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "Quod",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Division",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Postman",
+							"type": "text"
+						},
+						{
+							"key": "upper_division",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "collaborators",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "ambassador",
+							"value": "Héctor",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/divisions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"divisions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Division",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Postman2",
+							"type": "text"
+						},
+						{
+							"key": "upper_division",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "collaborators",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "ambassador",
+							"value": "Héctor",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/divisions/51",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"divisions",
+						"51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Division",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/divisions/51",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"divisions",
+						"51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Division",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/divisions/51",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"divisions",
+						"51"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

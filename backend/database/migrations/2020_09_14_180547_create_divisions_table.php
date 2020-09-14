@@ -19,7 +19,7 @@ class CreateDivisionsTable extends Migration
             $table->unsignedBigInteger('upper_division')->nullable();
             $table->foreign('upper_division')->references('id')->on('divisions');
             $table->integer('collaborators');
-            $table->string('ambassor', 250);
+            $table->string('ambassador', 250);
             $table->timestamps();
         });
     }

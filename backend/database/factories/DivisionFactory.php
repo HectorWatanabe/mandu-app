@@ -4,7 +4,6 @@ namespace Database\Factories;
 
 use App\Models\Division;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 class DivisionFactory extends Factory
 {
@@ -25,7 +24,7 @@ class DivisionFactory extends Factory
         return [
             'name' => $this->faker->text('45'),
             'collaborators' => $this->faker->numberBetween(0,50),
-            'ambassor' => $this->faker->name
+            'ambassador' => $this->faker->name
         ];
     }
 }
